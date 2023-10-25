@@ -1,0 +1,174 @@
+*,
+html,
+body {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1500px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.user-info {
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 15px;
+}
+
+.rating__title {
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.rating-list__item {
+	padding: 5px;
+}
+
+#canvasForSnake,
+.rating {
+	flex: 50%;
+}
+
+.rating {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.modal {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__content {
+	background-color: #ccc2c2;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	max-width: 300px;
+}
+
+.closeModal {
+	color: #607D8B;
+	justify-content: flex-end;
+	font-size: 28px;
+	font-weight: bold;
+   cursor: pointer;
+}
+
+.modal__title {
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
+}
+
+.modal__field-wrap {
+	padding: 10px;
+}
+
+#player-name {
+	padding: 0 5px;
+}
+
+#player-name,
+#difficulty {
+	min-height: 30px;
+	border: none;
+	width: 100%;
+}
+
+.btn {
+	background: transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: none;
+}
+
+#snake-start-game {
+	box-shadow: 0 0 0 1px #21ba45 inset;
+	color: #21ba45;
+	display: block;
+	margin: 0 auto;
+}
+
+#snake-end-game {
+	box-shadow: 0 0 0 1px #db2828 inset;
+	color: #db2828;
+}
+
+#snake-start-over {
+	box-shadow: 0 0 0 1px #4328db inset;
+	color: #4328db;
+}
+/* 
+
+section {
+   display: flex;
+}
+
+
+
+#snake-container {
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: 10px;
+}
+
+.snake-wrapper {
+   display: flex;
+   margin: auto;
+}
+
+.controls {
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.controls button {
+   width: 115px;
+}
+
+.controls .label {
+   font-weight: bold;
+   display: block;
+   margin-bottom: 10px;
+}
+
+.controls select {
+   padding: 5px;
+}
+
+#message, span.score {
+   display: block;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+*/
+.d-none {
+	display: none;
+}
+
+/*
+.bg-red {
+   background-color: #d72e2e;
+}
+
+.end-color {
+   color: #d72e2e;
+} */

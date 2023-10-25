@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Snake</title>
+      <link rel="stylesheet" href="./css/reset.css">
+      <link rel="stylesheet" href="./css/main.css">
+      <script type="module" src="index.js"></script>
+   </head>
+   <body>
+      <div class="user-info d-flex">
+         <span id="snake-score">Score: <b> 0 </b></span>
+         <span id="user-name">Player name: <b></b></span>
+         <span id="user-difficulty">Difficulty: <b></b></span>
+         <button id="snake-start-over" class="btn d-none">Start Over</button>
+         <button id="snake-end-game" class="btn d-none">End Game</button>
+      </div>
+      <div class="container d-flex">
+         <canvas id="canvasForSnake"></canvas>
+         <div class="rating">
+            <h2 class="rating__title">Player rating</h2>
+            <ul id="rating-list"></ul>
+         </div>
+      </div>
+      <div id="snake-start-modal" class="modal">
+         <div class="modal__content">
+            <span class="closeModal d-flex">&times;</span>
+            <h2 class="modal__title">Enter your name and choose a difficulty level</h2>
+            <form id="snake-controls-form">
+               <div class="modal__field-wrap">
+                  <label for="player-name">Your name</label>
+                  <input type="text" id="player-name" name="playerName" value="Player">
+               </div>
+               <div class="modal__field-wrap">
+                  <label for="difficulty">Difficulty level</label>
+                  <select id="difficulty" name="difficulty">
+                     <option value="400">easy</option>
+                     <option value="300">medium</option>
+                     <option value="200">hard</option>
+                  </select>
+               </div>
+            </form>
+            <button id="snake-start-game" class="btn">Start Game</button>
+         </div>
+      </div>
+   </body>
+</html>
